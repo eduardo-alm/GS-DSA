@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor de Missão Espacial</title>
+ <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+  <h1> Monitor de Missão Espacial</h1>
+
+  <h2>Inserir Dados</h2>
+
+  <label>Temperatura (°C):
+    <input type="number" id="temperatura" placeholder="Insira a temperatuta">
+  </label>
+
+  <label>Energia (%):
+    <input type="number" id="energia" placeholder="Insira o nível da energia">
+  </label>
+
+  <label>Comunicação:
+    <select id="comunicacao">
+      <option value="1">OK</option>
+      <option value="0">Falha</option>
+    </select>
+  </label>
+
+  <button onclick="inserirDados()">Registrar Leitura</button>
+
+  <h2>Menu</h2>
+  <button onclick="verStatus()">Ver Status Atual</button>
+  <button onclick="executarAnalise()">Executar Análise</button>
+  <button onclick="verHistorico()">Ver Histórico</button>
+  <button onclick="limparHistorico()">Limpar Histórico</button>
+
+ 
+  <h2>Resultado</h2>
+  <div id="resultado"><span class="info">Aguardando ação...</span></div>
+
+  
+<script src="script.js"></script>
+
+</body>
+</html>
